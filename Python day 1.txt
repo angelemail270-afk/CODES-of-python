@@ -1,0 +1,398 @@
+#here is all the coding I did in 3 hours of day 1 and then the next day took another hour to make a mini project using python. Here is all the code :
+
+ 1}GREETING PROGRAM 
+a=input("What is your name? ")
+print(F" Hello {a}!")
+ 
+Output: What is your name? Angel
+ Hello Angel! 
+
+2}Student Information Card
+#---Student Information Card---
+name=str(input("Name:"))
+roll_no=int(input("Roll No:"))
+course=str(input("Course:"))
+section=str(input("Section:"))
+blood_group=str(input("Blood Group:"))
+phone_number=str(input("Phone Number:"))
+Address=str(input("Address:"))
+school_name=str(input("School Name:"))
+Father_name=str(input("Father Name:"))
+Mother_name=str(input("Mother Name:"))
+Photography=str(input("Photo:"))
+print("--Student Information Card--")
+print(f"Name:{name}")
+print(f"Roll no:{roll_no}")
+print(f"Course:{course}")
+print(f" Section:{section}")
+print(f"Blood group:{blood_group}")
+print(f"Phone number:{phone_number}")
+print(f"Address:{Address}")
+print(f"School Name:{school_name}")
+print(f"Father's name:{Father_name}")
+print(f"Mother's name:{Mother_name}")
+print(f"Photography:{Photography}")
+output:
+Name:Angel
+Roll No:10
+Course:G
+Section:G
+Blood Group:B+
+Phone Number:77842483401
+Address:ggfygeu rf s
+School Name:esgfgsf''
+Father Name:aa
+Mother Name:k
+Photo::)
+--Student Information Card--
+Name:Angel
+Roll no:10
+Course:G
+ Section:G
+Blood group:B+
+Phone number:77842483401
+Address:ggfygeu rf s
+School Name:esgfgsf''
+Father's name:aa
+Mother's name:k 
+Photography::)
+
+
+
+3}Tiny Calculator 
+a=float(input("Enter a number:"))
+b=float(input("Enter a number:"))
+print("----Tiny Calculator----")
+
+print(a+b)
+
+print(a-b)
+
+print(a*b)
+
+print(a/b)
+
+print(a%b)
+
+print(a**b)
+
+print("Invalid input this is a calculator app input numbers please! ")
+
+Output: Enter a number:10
+Enter a number:20
+----Tiny Calculator----
+30.0
+-10.0
+200.0
+0.5
+10.0
+1e+20
+Invalid input this is a calculator app input numbers please!
+ #I also tried this program with alternative match cases 
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+operation = input(
+    "Choose operation (+, -, *, /, %, **): "
+)
+
+match operation:
+
+    case "+":
+        print(a + b)
+
+    case "-":
+        print(a - b)
+
+    case "*":
+        print(a * b)
+
+    case "/":
+        print(a / b)
+
+    case "%":
+        print(a % b)
+
+    case "**":
+        print(a ** b)
+
+    case _:
+        print("Invalid operation")
+
+
+
+Challenge 2: Even or odd 
+number=int(input("Enter a number:"))
+if number%2==0:
+  print("Even")
+else:
+  print("Odd")
+output: Enter a number:89
+Odd 
+
+Challenge 3 :Password-Checker 
+password="python123"
+user_input=input("Enter password:")
+if user_input==password:
+  print("Access Granted")
+else:
+  print("Access Denied") 
+output:
+Enter password:python123
+Access Granted 
+
+
+Challenge 4:BMI Classifier
+#---BMI CHECKER--
+weight=float(input("Enter weight in kg:"))
+height=float(input("Enter height in m"))
+BMI=weight/(height**2)
+if BMI<18.5:
+  print("Underweight")
+elif BMI<=24.9:
+   print("Normal")
+else:
+  print("Overweight")
+output:
+Enter weight in kg:80
+Enter height in m990
+Underweight
+ 
+
+Challenge 5: GRADE CALCULATOR 
+marks=int(input("Enter your marks:"))
+if marks>=90:
+  print("A")
+elif marks>=80:
+  print("B")
+elif marks>=70:
+  print("C")
+elif marks>=60:
+  print("D")
+else:
+  print("Fail")
+output:Enter your marks:100
+A
+
+HOUR 3
+
+Challenge 1:Printing 1 to 10 
+for i in range (1,11):
+ print(i)
+Output:1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Challenge 2:MULTIPLICATION TABLE 
+n=int(input("Enter a number:"))
+for i in range(1,11):
+ print(f" {n}*{i}={n*i}")
+Output:
+Enter a number:7
+ 7*1=7
+ 7*2=14
+ 7*3=21
+ 7*4=28
+ 7*5=35
+ 7*6=42
+ 7*7=49
+ 7*8=56
+ 7*9=63
+ 7*10=70
+
+Challenge 3: SUM of numbers 
+total=0
+a=int(input("Enter a number:"))
+for i in range(1,a+1):
+  total=total+i
+print(total) 
+Output: 
+Enter a number:5
+15
+Challenge 4:Password Retry 
+password = "python123"
+user_input=input("Enter password:")
+while  password!=user_input:
+  print("Wrong paswword")
+  user_input=input("Enter password:")
+print("Access Granted")
+output:
+Enter password:python
+Wrong paswword
+Enter password:shdh'
+Wrong paswword
+Enter password:python
+Wrong paswword
+Enter password:python123
+Access Granted 
+
+Challenge 5:COUNTDOWN
+a=int(input("Enter starting number:"))
+while a>0 :
+  print(a)
+  a=a-1
+
+print("Blast off!") 
+Output:
+Enter starting number:7
+7
+6
+5
+4
+3
+2
+1
+Blast off! 
+
+PYTHON HOUR 4 :MINI PROJECT! :"THE QUIZ GAME" 
+score=0
+print("========================")
+print("======PYTHON QUIZ=======")
+print("========================")
+#----QUESTION 1 STARTS HERE----
+print("Lets dive in !")
+print("What function is used to get user input  a?")
+print("a) print()")
+print("b) input()")
+print("c) range()")
+user_input=input("Enter a option:")
+if user_input=="b":
+  print("HOORAY!CORRECT ANSWER is in fact:B")
+  score=score+1
+else:
+  print("Wrong try again !")
+#----QUESTION 2 STARTS HERE---
+print(" q2: What operator calculates remainder?")
+print("a) %")
+print("b) /")
+print("c) *")
+user_input=input("Enter a option ")
+if user_input=='a':
+  print("A is correct")
+  score=score+1
+else:
+  print("NO NO NO!TRY AGAIN")
+#----QUESTION 3 STARTS HERE----
+print(" q3 Which keyword is used for conditions?")
+print("a) while")
+print("b) for")
+print("c) if")
+user_input=input("Enter a option ")
+if user_input=='c':
+  print("C is correct")
+  score=score+1
+else:
+  print("NO NO NO!TRY AGAIN")
+#---QUESTION 4 STARTS HERE----
+print(" q4 What data type is 3.14?")
+print("a) int")
+print("b) float")
+print("c) string")
+user_input=input("Enter a option ")
+if user_input=='b':
+  print("B is correct!and you win!!! NOTHING!!")
+  score=score+1
+else:
+  print("NO NO NO!TRY AGAIN YOU GOT THIS DONT WORRY!!")
+#----QUESTION 5 STARTS HERE-----
+print("q 5 Which loop repeats while a condition is true?")
+print("a) while")
+print("b) print")
+print("c) input")
+user_input=input("Enter a option ")
+if user_input=='a':
+  print("A is correct")
+  score=score+1
+else:
+  print("NO NO NO!TRY AGAIN")
+
+#FINAL SCORE
+print(f"Your score is {score}/5")
+#BONUS
+if score == 5:
+    print("Excellent!")
+
+elif score >= 3:
+    print("Good Job!")
+
+else:
+    print("Keep Practicing!")
+
+Output:
+========================
+======PYTHON QUIZ=======
+========================
+Lets dive in !
+What function is used to get user input  a?
+a) print()
+b) input()
+c) range()
+Enter a option:b
+HOORAY!CORRECT ANSWER is in fact:B
+ q2: What operator calculates remainder?
+a) %
+b) /
+c) *
+Enter a option a
+A is correct
+ q3 Which keyword is used for conditions?
+a) while
+b) for
+c) if
+Enter a option c
+C is correct
+ q4 What data type is 3.14?
+a) int
+b) float
+c) string
+Enter a option b
+B is correct!and you win!!! NOTHING!!
+q 5 Which loop repeats while a condition is true?
+a) while
+b) print
+c) input
+Enter a option a
+A is correct
+Your score is 5/5
+Excellent! 
+
+
+####THINGS I LEARNT FROM DAY 1:
+##What You've Actually Built
+
+#Today created:
+
+#Greeting Program
+#Student Information Card
+##Calculator
+#Age Checker
+#Even/Odd Checker
+#Password Checker
+#BMI Classifier
+#Grade Calculator
+#Multiplication Table
+#Sum Calculator
+#Countdown Timer
+#Quiz Game
+
+#That's a strong Day 1.
+#At this point, I've successfully completed what I would consider a solid Day 1 Python Fundamentals curriculum.
+
+#I can now:
+#Store data
+#Get user input
+#Make decisions
+#Repeat actions with loops
+#Keep track of scores/totals
+#Build simple terminal applications
+#Most importantly:
+#I've starting to think about why the code works, not just what to type.
+#That's the difference between learning programming and copying programming.
